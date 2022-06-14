@@ -1,0 +1,44 @@
+.skill{
+    padding: .1rem;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.skill:hover .skill__title:after, .skill:hover .skill__title:before{
+    width: 30px;
+}
+
+.skill:hover .skill__img{
+    transform: translateY(-10px);
+}
+
+.skill__img{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .25s;
+}
+
+.skill__img:after{
+    content: '';
+    position:absolute;
+    top: -1px;
+    left: 0;
+    width: 50%;
+    height: 40px;
+    background-color: rgba(211, 211, 211, 0.5);
+    border-radius: 50px 0 0 50px;
+    
+}
+
+.skill__icon{
+    width: 20px;
+    z-index: 2;
+
+}

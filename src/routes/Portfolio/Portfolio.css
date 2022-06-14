@@ -1,0 +1,122 @@
+/* Style App.js wrapper */
+.portfolio {
+  background-color: none;
+}
+
+.portfolio__head {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  background-color: transparent;
+  padding: 1rem;
+  margin: 5rem auto 2rem;
+  
+}
+
+.portfolio__head-left{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.portfolio__project-title{
+  font-size: 4.6rem;
+}
+
+.portfolio__head-right{
+  width: 100%;
+  color: white;
+}
+
+.portfolio__head-right a{
+  margin-top: 1.4rem;
+  display: inline-block;
+  color: var(--color-primary);
+  transition: all 400ms ease;
+}
+
+.portfolio__head-right a:hover{
+  margin-left: 1rem;
+}
+
+/* Tab Container */
+.tabs__container {
+  height: 80%;
+  background: transparent;
+  padding: 1rem 1rem;
+  color: white;
+}
+
+/* Tab Navigation */
+.tabs__nav {
+  width: 60%;
+  margin: 3rem auto 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid white;
+  border-radius: 50rem;
+}
+
+.tabs__nav .tabs__nav--list-items {
+  width: 50%;
+  padding: 1rem;
+  list-style: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+
+.tabs__nav .tabs__nav--list-items:first-child {
+  border-bottom-left-radius: 2rem;
+  border-top-left-radius: 2rem;
+}
+
+.tabs__nav .tabs__nav--list-items:last-child {
+  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.tabs__nav .tabs__nav--list-items:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.tabs__nav .tabs__nav--list-items.active {
+  background: white;
+  color: black;
+}
+
+/* Tab Content Styles */
+.content {
+  background-color: transparent;
+  font-family: var(--font-base);
+  font-size: 2rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+  .tabs__nav {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .portfolio__head {
+    place-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 5rem auto 1rem;
+    
+  }
+  .portfolio__head-left{
+    width: 100%;
+  }
+  .portfolio__head-right{
+    width: 100%;
+    text-align: center;
+  }
+  .portfolio__head-left,
+  .portfolio__head-right {
+    width: 90%;
+  }
+}
